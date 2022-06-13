@@ -1,0 +1,163 @@
+{
+    "prefs": {
+        "public": {
+            "char_limit": 2500,
+            "name_limit": 25,
+            "status_limit": 36,
+            "godword": "HA ITS AUTO GENERATED NOW LMAOOO",
+            "runlevel": {
+                "godmode": 0,
+                "youtube": 0,
+                "joke": 0,
+                "fact": 0,
+                "wtf": 0,
+                "topestjej": 0,
+                "image": 0,
+                "video": 0,
+                "audio": 0,
+                "sticker": 0,
+                "backflip": 0,
+                "earth": 0,
+                "grin": 0,
+                "clap": 0,
+                "shrug": 0,
+                "praise": 0,
+                "sad": 0,
+                "think": 0,
+                "ban": 3,
+                "unban": 3,
+                "kick": 3,
+                "color": 0,
+                "asshole": 0,
+                "triggered": 0,
+                "linux": 0,
+                "pitch": 0,
+                "speed": 0,
+                "pawn": 0,
+                "bees": 0,
+                "vaporwave": 0,
+                "unvaporwave": 0,
+                "name": 0,
+                "status": 0,
+                "owo": 0,
+                "uwu": 0,
+                "sanitize": 3,
+                "pope": 3
+            },
+			"room_max": 10,
+			"owner": null,
+			"pitch": {
+				"max": 125,
+				"min": 15,
+				"default": "random"
+			},
+			"speed": {
+				"max": 275,
+				"min": 125,
+				"default": "random"
+			},
+			"defaultName": "Anonymous"
+		},
+        "private": {
+            "char_limit": 5000,
+            "name_limit": 25,
+            "status_limit": 36,
+            "godword": "HA ITS AUTO GENERATED NOW LMAOOO",
+            "runlevel": {
+                "godmode": 0,
+                "youtube": 0,
+                "joke": 0,
+                "fact": 0,
+                "wtf": 0,
+                "topestjej": 0,
+                "image": 0,
+                "video": 0,
+                "audio": 0,
+                "sticker": 0,
+                "backflip": 0,
+                "earth": 0,
+                "grin": 0,
+                "clap": 0,
+                "praise": 0,
+                "sad": 0,
+                "think": 0,
+                "shrug": 0,
+                "ban": 3,
+                "unban": 3,
+                "kick": 3,
+                "color": 0,
+                "asshole": 0,
+                "triggered": 0,
+                "linux": 0,
+                "pitch": 0,
+                "speed": 0,
+                "pawn": 0,
+                "bees": 0,
+                "vaporwave": 0,
+                "unvaporwave": 0,
+                "name": 0,
+                "status": 0,
+                "owo": 0,
+                "uwu": 0,
+                "sanitize": 3,
+                "pope": 3
+            },
+			"room_max": 30,
+			"owner": null,
+			"pitch": {
+				"max": 125,
+				"min": 15,
+				"default": "random"
+			},
+			"speed": {
+				"max": 275,
+				"min": 125,
+				"default": "random"
+			},
+			"defaultName": "Anonymous"
+		}
+	},
+	"consoleOutput": false,
+	"log": {
+		"info": {
+			"level": "info",
+			"filename": "./logs/info.log",
+			"maxsize": "1024000",
+			"maxFiles": "3",
+		"handleExceptions": true,
+		"humanReadableUnhandledException": true
+		},
+		"access": {
+			"level": "info",
+			"filename": "./logs/access.log",
+			"maxsize": "1024000",
+			"maxFiles": "3",
+		"handleExceptions": true,
+		"humanReadableUnhandledException": true
+		}
+	},
+    "bonziColors": [
+      "purple",
+      "blue",
+      "green",
+      "red",
+      "black",
+      "brown",
+      "yellow",
+      "white",
+      "grey",
+      "god",
+      "dark_purple",
+      "dark_red",
+      "lime",
+      "magenta",
+      "lemon",
+      "cyan",
+      "pink"
+    ],
+	"banLength": 1440,
+	"port": 3000,
+	"express": {
+		"serveStatic": true
+	}
+}
