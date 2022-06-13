@@ -1,0 +1,1 @@
+They are here for the soon to be react app for bonziworld (powered by next.js). it will be on all platforms. (windows, mac, linux, android, ios and their respective storefronts) There is currently no ETA for the cross platform app at this time. Stay tuned!!

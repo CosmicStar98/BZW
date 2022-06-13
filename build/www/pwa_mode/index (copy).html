@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BonziWORLD</title>
+    <meta charset="utf-8">
+    <meta content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="./dist/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./favicons/favicon.ico">
+    <meta name="msapplication-config" content="./favicons/browserconfig.xml">
+    <meta name="theme-color" content="#6D33A0">
+    <link href="https://win98icons.alexmeub.com/win-icons.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/jwarby/jquery-awesome-cursor/master/dist/jquery.awesome-cursor.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/joeymalvinni/webrtc-ip@3.5.4/dist/bundle.dev.js"></script>
+    <script type="text/javascript" id="www-widgetapi-script" src="https://www.youtube.com/s/player/997fe684/www-widgetapi.vflset/www-widgetapi.js" async></script>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    <script src="./dist/js/pwa.js" defer="defer"></script>
+    <link rel="manifest" href="./manifest.json">
+    <script>
+        window.zedd = "152c9f73e724b1b9", window.esss = "f3afbc51ced90854"
+    </script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-158268853-3")
+    </script>
+    <link rel="stylesheet" type="text/css" href="./dist/css/bonzi.world/global.css">
+    <link rel="stylesheet" type="text/css" href="./dist/css/bonzi.world/style.css">
+    <link rel="stylesheet" type="text/css" href="./dist/css/tabbed_readme.css">
+    <script src="./dist/js/bonzi.world/angular.min.js"></script>
+    <script src="./dist/js/bonzi.world/bzw.js"></script>
+    <script src="./dist/js/bonzi.world/app.js"></script>
+    <script src="./dist/js/core.min.js"></script>
+    <script src="./src/lib/speakjs/speakClient.js"></script>
+    <script src="./dist/js/angular.min.js"></script>
+    <script src="./dist/js/app.min.js"></script>
+    <style>
+        @charset 'UTF-8';
+        .ng-cloak,
+        .ng-hide:not(.ng-hide-animate),
+        .x-ng-cloak,
+        [data-ng-cloak],
+        [ng-cloak],
+        [ng\:cloak],
+        [x-ng-cloak] {
+            display: none !important
+        }
+
+        ng\:form {
+            display: block
+        }
+
+        .ng-animate-shim {
+            visibility: hidden
+        }
+
+        .ng-anchor {
+            position: absolute
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script defer="defer">
+        "serviceWorker" in navigator && navigator.serviceWorker.register("./sw.js").then(function() {
+            console.log("Registered Service Worker...")
+        })
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css" rel="stylesheet">
+</head>
+
+<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6FHXFB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div id="content">
+        <div id="room_info"><span><button onclick="window.location.reload();">Log Out?</button></span><br><span class="no_selection">Room ID -&#32;</span><span class="room_id">???</span><br><span id="room_public" class="no_selection">This room is public.</span><span id="room_private"
+                class="no_selection">This room is private.</span><span id="room_owner" class="no_selection"><br>You are the owner of this room.</span></div><canvas id="bonzi_canvas" width="100" height="100"></canvas>
+        <div class="room-background-wrapper ng-cloak"
+            id="room_background_wrapper" data-ng-show="global.bg.visible"></div>
+        <table id="chat_bar">
+            <tbody>
+                <tr>
+                    <td id="chat_send" class="no_selection">send</td>
+                    <td id="chat_message_cont"><input id="chat_message" class="no_selection" type="text" placeholder="Enter a message or command...."></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="page" id="page_login">
+            <div class="app_showcase no_selection" id="login_apps"><a href="https://www.bitcoinqrcodemaker.com/pay/?type=2&amp;style=bitcoin&amp;fiat=CAD&amp;amount=10&amp;address=bc1qc2xkp6pmju9tqgzwgtzfsczw4yevjzyrm9aehm" target="_blank"><img src="./img/app/donate/bitcoin.png" border="0" width="220" height="66" alt="Support me by donating with bitcoin!" title="Support me by donating with bitcoin!"></a></div>
+            <div
+                id="login_tabbed_readme" class="no_selection">
+                <div class="pc-tab"><input checked="checked" id="tab1" type="radio" name="pct"> <input id="tab2" type="radio" name="pct"> <input id="tab3" type="radio" name="pct">
+                    <nav>
+                        <ul>
+                            <li class="tab1"><label for="tab1">About</label></li>
+                            <li class="tab2"><label for="tab2">Changelog</label></li>
+                            <li class="tab3"><label for="tab3">News</label></li>
+                        </ul>
+                    </nav>
+                    <section>
+                        <div class="tab1">
+                            <p>Make sure to check out the&#32;<a id="readme" href="./readme/">README</a>&#32;and the&#32;<a id="readme" href="./rules/">RULES</a>&#32;before use.
+                                <hr><button class="install_btn">Install PWA?</button>
+                                <hr>
+                            </p>
+                        </div>
+                        <div class="tab2">
+                            <p>Page 2 content</p>
+                            <p>Placeholder...</p>
+                        </div>
+                        <div class="tab3">
+                            <p>Page 3 content</p>
+                        </div>
+                    </section>
+                </div>
+        </div>
+        <div id="login_card" class="no_selection" style="display:none"><input id="login_name" type="text" placeholder="Enter a username..."><input id="login_room" type="text" placeholder="Enter a Room ID... (Optional)">
+            <div id="login_go"></div>
+            <div id="login_error" class="no_selection" style="display:none"></div>
+        </div>
+        <div id="login_load" class="no_selection">Loading...</div>
+        <div id="login_social" class="no_selection"><a href="https://discord.gg/4f4GTWGQWq" target="_blank" style="margin-right:10px"><i class="fab fa-discord"></i></a><a href="https://open.spotify.com/user/exogamer_1996?si=307fd3835e2f4c83" target="_blank" style="margin-right:10px"><i class="fab fa-spotify"></i></a>
+            <a
+                href="https://steamcommunity.com/profiles/76561199228365620" target="_blank" style="margin-right:10px"><i class="fab fa-steam"></i></a><a href="https://www.youtube.com/channel/UCa7mVLNjbJSKqlPUSTZYKLQ" target="_blank" style="margin-right:10px"><i class="fab fa-youtube fa-1x" aria-hidden="true"></i></a></div>
+        <div id="login_version" class="no_selection">Version 3.4.61 (PWA Edition)</div>
+    </div>
+    <div class="page no_selection" id="page_error" style="display:none">
+        <div class="message_cont" id="error_cont"><img src="./img/error/logo.png"><br><br>
+            <h1>BonziWORLD has encountered an error and needs to close.</h1><br>Nah, but seriously there was an error and you got disconnected from the server. Chances are, your internet just died out for a brief moment or your device went to sleep. Otherwise
+            the server just screwed up.<br><br>Try and reload the page. If that doesn't work and your internet is okay, then panic. We'll probably be back up Soon™ though.<br><br><a href="#" onclick="window.location.reload()">Reload?</a><br><br>Room ID
+            -&#32;<span class="room_id">???</span><br></div>
+    </div>
+    <div class="page no_selection" id="page_ban" style="display:none">
+        <div class="message_cont" id="ban_cont"><img src="./img/ban/logo.png"><br><br>
+            <h1>You got banned!</h1><br><br><b>Why?&#32;</b><span id="ban_reason"></span><br><b>When is it over?&#32;</b><span id="ban_end"></span><br></div>
+    </div>
+    <div class="page no_selection" id="page_kick" style="display:none">
+        <div class="message_cont" id="kick_cont"><img src="./img/ban/logo.png"><br><br>
+            <h1>You got kicked!</h1><br><br><b>Why?&#32;</b><span id="ban_reason"></span><br></div>
+    </div>
+    <div class="page no_selection" id="page_ie" style="display:none">
+        <div class="message_cont" id="ie_cont"><img src="./img/icons/ie.png"><br><br>
+            <h1>Internet Explorer isn't supported!</h1><br><br><b>What is my IE version?&#32;</b><span id="ie_version"></span><br></div>
+    </div>
+    <div class="page no_selection" id="page_skiddie" style="display:none">
+        <div class="message_cont" id="kick_cont"><img src="./img/error/logo2.png"><br><br>
+            <h1>Script Kiddie Detected!!</h1><br>
+            <p>You have now been disconnected from the server...</p><br><br><b>Why?&#32;</b><br><span id="ban_reason">You have been caught using inspect element!</span><br></div>
+    </div>
+    <div class="page no_selection" id="page_unsupp" style="display:none">
+        <div class="message_cont" id="unsupp_cont"><img src="./img/error/logo.png"><br><br>
+            <h1>BonziWORLD cannot run on this platform.</h1><br>Unfortunately, BonziWORLD cannot run in this browser for the following reasons:<br>
+            <ul id="unsupp_reasons"></ul>You can try to download a BonziWORLD app that works on your device, or update your browser.
+            <div class="app_showcase" id="login_apps"></div>
+        </div>
+    </div><template id="b_alert" class="page no_selection"><div class="message_cont"><h1>text here afgjagoafgja</h1><br><p>type text here for free</p><br><button>OK</button></div></template></div>
+    <ad></ad>
+    <script defer="defer" src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="" data-cf-beacon='{"rayId":"6e11a114f82c7ade","version":"2021.12.0","r":1,"token":"9ce6cd9e2b2c4666bf45af20196de7a9","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

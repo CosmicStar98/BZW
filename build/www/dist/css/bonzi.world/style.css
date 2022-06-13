@@ -1,0 +1,1498 @@
+@charset "UTF-8";
+/* line 6, server/public/src/sass/style.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-width: 100vw;
+  overflow: hidden; }
+
+/* line 14, server/public/src/sass/style.scss */
+.text-center {
+  text-align: center; }
+
+/* line 17, server/public/src/sass/style.scss */
+.text-left {
+  text-align: left; }
+
+/* line 20, server/public/src/sass/style.scss */
+.text-right {
+  text-align: right; }
+
+/* line 59, server/public/src/sass/style.scss */
+#app_wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+/* line 65, server/public/src/sass/style.scss */
+#page_sidebar {
+  position: absolute;
+  right: 0px;
+  top: 15%;
+  width: 120px;
+  height: 100%;
+  text-align: center; }
+  /* line 72, server/public/src/sass/style.scss */
+  #page_sidebar #page_sidebar_close {
+    cursor: crosshair;
+    color: #FAFAFA;
+    text-align: center; }
+
+/* line 79, server/public/src/sass/style.scss */
+#login_readme {
+  padding-bottom: 8px !important; }
+  /* line 81, server/public/src/sass/style.scss */
+  #login_readme .twitter-follow-button {
+    display: none;
+    margin-top: 10px; }
+  /* line 85, server/public/src/sass/style.scss */
+  #login_readme .twitter-follow-button-rendered {
+    display: inline !important; }
+
+/* line 89, server/public/src/sass/style.scss */
+.capitalize {
+  text-transform: capitalize; }
+
+/* line 92, server/public/src/sass/style.scss */
+.lowercase {
+  text-transform: lowercase; }
+
+/* line 95, server/public/src/sass/style.scss */
+.uppercase {
+  text-transform: uppercase; }
+
+/* Background */
+/* line 2, server/public/src/sass/background.scss */
+#room_background_wrapper {
+  height: calc(100vh - 281px);
+  width: 100%;
+  position: fixed;
+  top: 101px;
+  left: 0;
+  z-index: -1;
+  background-color: #FFF; }
+  /* line 10, server/public/src/sass/background.scss */
+  #room_background_wrapper.size-normal {
+    height: calc(100vh - 281px); }
+  /* line 13, server/public/src/sass/background.scss */
+  #room_background_wrapper.size-maximized {
+    height: calc(100vh - 50px); }
+  /* line 18, server/public/src/sass/background.scss */
+  #room_background_wrapper #rbg-yt {
+    width: 100%;
+    height: 100%; }
+    /* line 21, server/public/src/sass/background.scss */
+    #room_background_wrapper #rbg-yt #ytbg-yt-v {
+      width: 100%;
+      height: 100%;
+      pointer-events: none; }
+
+/* line 31, server/public/src/sass/background.scss */
+body.side-bar-visible #room_background_wrapper {
+  max-width: calc(100% - 300px);
+  max-width: calc(100vw - 300px); }
+
+/* line 1, server/public/src/sass/ads.scss */
+#ap_iframe {
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  left: 50%; }
+
+/* line 11, server/public/src/sass/ads.scss */
+body {
+  background-color: #421f60; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, server/public/src/sass/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 26, server/public/src/sass/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 30, server/public/src/sass/reset.scss */
+body {
+  line-height: 1; }
+
+/* line 33, server/public/src/sass/reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 36, server/public/src/sass/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 41, server/public/src/sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, server/public/src/sass/common.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px; }
+
+/* line 7, server/public/src/sass/common.scss */
+body, body * {
+  font-family: "Tahoma", sans-serif; }
+
+/* line 11, server/public/src/sass/common.scss */
+input[type="text"] {
+  background-color: #fff;
+  border: 1px inset #AAA;
+  color: #000; }
+
+/* line 26, server/public/src/sass/common.scss */
+#extras-wrapper, .extras-wrapper {
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  top: 0px; }
+
+@font-face {
+  font-family: 'Tahoma';
+  src: url("/font/tahoma/tahoma.eot#iefix") format("embedded-opentype"), url("/font/tahoma/tahoma.woff") format("woff"), url("/font/tahoma/tahoma.ttf") format("truetype"), url("/font/tahoma/tahoma.svg#tahoma") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+
+
+/* line 82, server/public/src/sass/desktop.scss */
+#room_info {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  line-height: 125%;
+  text-align: right;
+  padding: 7px;
+  font-size: 10px;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  user-select: text;
+  -webkit-user-select: text; }
+
+/* line 118, server/public/src/sass/logon.scss */
+#login_arrow,
+#login_user {
+  left: 185px;
+  top: 38px;
+  position: absolute;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  color: #F5F5F5;
+  border: solid 1px #FAFAFA;
+  background-repeat: no-repeat;
+  background-color: #27ae60; }
+  /* line 136, server/public/src/sass/logon.scss */
+  #login_arrow:hover, #login_arrow:active,
+  #login_user:hover,
+  #login_user:active {
+    border: solid 1px #FFF;
+    color: #FAFAFA;
+    background-color: #2ecc71; }
+
+/* line 143, server/public/src/sass/logon.scss */
+#login_arrow {
+  top: 10px;
+  background-color: #FBC02D; }
+  /* line 146, server/public/src/sass/logon.scss */
+  #login_arrow:hover, #login_arrow:active {
+    background-color: #FDD835; }
+
+/* line 174, server/public/src/sass/logon.scss */
+#login_social {
+  color: #fff;
+  width: 100%;
+  width: 100vw;
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  left: 0px;
+  bottom: 16px; }
+  /* line 183, server/public/src/sass/logon.scss */
+  #login_social a {
+    color: #FAFAFA; }
+    /* line 185, server/public/src/sass/logon.scss */
+    #login_social a:visited {
+      color: #FAFAFA; }
+
+/* line 18, server/public/src/sass/log.scss */
+#chat_log {
+  background-color: #424242;
+  background-color: rgba(84, 13, 120, 0.45);
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 30px;
+  left: 0px;
+  width: 100%;
+  height: 150px;
+  font-size: 12px;
+  font-family: 'Ubuntu Mono', monospace;
+  border-top: solid 1px #F2F2F2;
+  color: #FAFAFA;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+  /* line 32, server/public/src/sass/log.scss */
+  #chat_log .clc-maximize {
+    display: none; }
+  /* line 35, server/public/src/sass/log.scss */
+  #chat_log .clc-minimize {
+    display: none; }
+  /* line 38, server/public/src/sass/log.scss */
+  #chat_log .clc-status-idle {
+    display: none; }
+  /* line 41, server/public/src/sass/log.scss */
+  #chat_log .clc-status-refreshing {
+    display: none; }
+  /* line 44, server/public/src/sass/log.scss */
+  #chat_log .clc-status-muted {
+    display: none; }
+  /* line 47, server/public/src/sass/log.scss */
+  #chat_log .clc-status-unmuted {
+    display: none; }
+  /* line 50, server/public/src/sass/log.scss */
+  #chat_log .clc-status-sapi-disabled {
+    display: none; }
+  /* line 53, server/public/src/sass/log.scss */
+  #chat_log .clc-status-sapi-enabled {
+    display: none; }
+  /* line 57, server/public/src/sass/log.scss */
+  #chat_log.status-sapi-disabled .clc-status-sapi-disabled {
+    display: block; }
+  /* line 60, server/public/src/sass/log.scss */
+  #chat_log.status-sapi-disabled .clc-status-sapi-enabled {
+    display: none !important; }
+  /* line 65, server/public/src/sass/log.scss */
+  #chat_log.status-sapi-enabled .clc-status-sapi-enabled {
+    display: block; }
+  /* line 68, server/public/src/sass/log.scss */
+  #chat_log.status-sapi-enabled .status-sapi-disabled {
+    display: none !important; }
+  /* line 73, server/public/src/sass/log.scss */
+  #chat_log.status-muted .clc-status-muted {
+    display: block; }
+  /* line 76, server/public/src/sass/log.scss */
+  #chat_log.status-muted .clc-status-unmuted {
+    display: none !important; }
+  /* line 81, server/public/src/sass/log.scss */
+  #chat_log.status-unmuted .clc-status-unmuted {
+    display: block; }
+  /* line 84, server/public/src/sass/log.scss */
+  #chat_log.status-unmuted .clc-status-muted {
+    display: none !important; }
+  /* line 89, server/public/src/sass/log.scss */
+  #chat_log.status-idle .clc-status-idle {
+    display: block; }
+  /* line 92, server/public/src/sass/log.scss */
+  #chat_log.status-idle .clc-status-refreshing {
+    display: none !important; }
+  /* line 97, server/public/src/sass/log.scss */
+  #chat_log.status-refreshing .clc-status-refreshing {
+    display: block; }
+  /* line 100, server/public/src/sass/log.scss */
+  #chat_log.status-refreshing .clc-status-idle {
+    display: none !important; }
+  /* line 104, server/public/src/sass/log.scss */
+  #chat_log.minimized {
+    height: 20px; }
+    /* line 106, server/public/src/sass/log.scss */
+    #chat_log.minimized .clc-maximize {
+      display: block; }
+    /* line 109, server/public/src/sass/log.scss */
+    #chat_log.minimized .clc-minimize {
+      display: none !important; }
+  /* line 113, server/public/src/sass/log.scss */
+  #chat_log.maximized {
+    height: 150px; }
+    /* line 115, server/public/src/sass/log.scss */
+    #chat_log.maximized .clc-minimize {
+      display: block; }
+    /* line 118, server/public/src/sass/log.scss */
+    #chat_log.maximized .clc-maximize {
+      display: none !important; }
+  /* line 123, server/public/src/sass/log.scss */
+  #chat_log #chat_log_header {
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid #5b1784; }
+    /* line 134, server/public/src/sass/log.scss */
+    #chat_log #chat_log_header .clh-col {
+      flex-grow: 1; }
+      /* line 136, server/public/src/sass/log.scss */
+      #chat_log #chat_log_header .clh-col#chat_log_status {
+        flex-grow: 3; }
+      /* line 140, server/public/src/sass/log.scss */
+      #chat_log #chat_log_header .clh-col#chat_log_controls ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        text-align: right;
+        padding-right: 8px; }
+        /* line 147, server/public/src/sass/log.scss */
+        #chat_log #chat_log_header .clh-col#chat_log_controls ul li {
+          display: inline-block;
+          margin-left: 10px;
+          font-size: 14px;
+          padding-top: 3px;
+          color: #BDBDBD; }
+          /* line 153, server/public/src/sass/log.scss */
+          #chat_log #chat_log_header .clh-col#chat_log_controls ul li:hover {
+            color: #EEEEEE; }
+          /* line 156, server/public/src/sass/log.scss */
+          #chat_log #chat_log_header .clh-col#chat_log_controls ul li i {
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+            /* line 158, server/public/src/sass/log.scss */
+            #chat_log #chat_log_header .clh-col#chat_log_controls ul li i.clc_con {
+              color: #c0392b; }
+              /* line 160, server/public/src/sass/log.scss */
+              #chat_log #chat_log_header .clh-col#chat_log_controls ul li i.clc_con.disconnected {
+                color: #c0392b; }
+              /* line 163, server/public/src/sass/log.scss */
+              #chat_log #chat_log_header .clh-col#chat_log_controls ul li i.clc_con.connected {
+                color: #AED581; }
+  /* line 173, server/public/src/sass/log.scss */
+  #chat_log #chat_log_list {
+    width: 100%;
+    margin-top: 20px;
+    height: 130px;
+    overflow-x: hidden;
+    overflow-y: scroll; }
+    /* line 179, server/public/src/sass/log.scss */
+    #chat_log #chat_log_list ul {
+      margin: 0 auto;
+      padding: 2px;
+      padding-top: 0px;
+      list-style: none; }
+      /* line 184, server/public/src/sass/log.scss */
+      #chat_log #chat_log_list ul li.bonzi-message {
+        cursor: default; }
+        /* line 186, server/public/src/sass/log.scss */
+        #chat_log #chat_log_list ul li.bonzi-message span {
+          font-family: 'Ubuntu Mono', monospace; }
+          /* line 188, server/public/src/sass/log.scss */
+          #chat_log #chat_log_list ul li.bonzi-message span.bonzi-name {
+            cursor: pointer; }
+            /* line 190, server/public/src/sass/log.scss */
+            #chat_log #chat_log_list ul li.bonzi-message span.bonzi-name .bonzi-name-icon {
+              height: 12px;
+              font-size: 10px;
+              line-height: 12px;
+              vertical-align: middle;
+              margin-right: 3px; }
+          /* line 205, server/public/src/sass/log.scss */
+          #chat_log #chat_log_list ul li.bonzi-message span.body {
+            word-break: break-all; }
+            /* line 207, server/public/src/sass/log.scss */
+            #chat_log #chat_log_list ul li.bonzi-message span.body i {
+              line-height: 12px;
+              font-size: 12px;
+              height: 12px;
+              vertical-align: bottom;
+              transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+              /* line 213, server/public/src/sass/log.scss */
+              #chat_log #chat_log_list ul li.bonzi-message span.body i.color-youtube {
+                color: #e53935; }
+                /* line 215, server/public/src/sass/log.scss */
+                #chat_log #chat_log_list ul li.bonzi-message span.body i.color-youtube:hover, #chat_log #chat_log_list ul li.bonzi-message span.body i.color-youtube:active {
+                  color: #ef5350; }
+        /* line 222, server/public/src/sass/log.scss */
+        #chat_log #chat_log_list ul li.bonzi-message.bonzi-event {
+          font-style: italic;
+          color: #BDBDBD; }
+          /* line 225, server/public/src/sass/log.scss */
+          #chat_log #chat_log_list ul li.bonzi-message.bonzi-event .event-source {
+            text-transform: capitalize; }
+          /* line 228, server/public/src/sass/log.scss */
+          #chat_log #chat_log_list ul li.bonzi-message.bonzi-event .timestamp {
+            color: #FAFAFA;
+            font-style: normal !important; }
+          /* line 232, server/public/src/sass/log.scss */
+          #chat_log #chat_log_list ul li.bonzi-message.bonzi-event .log-discord {
+            font-weight: bold; }
+            /* line 234, server/public/src/sass/log.scss */
+            #chat_log #chat_log_list ul li.bonzi-message.bonzi-event .log-discord .log-discord-link {
+              color: #3498db;
+              text-decoration: none;
+              font-weight: bold; }
+    /* line 243, server/public/src/sass/log.scss */
+    #chat_log #chat_log_list #cll-glue-toggle {
+      position: absolute;
+      font-size: 20px;
+      margin: 0 auto;
+      bottom: 5px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: rgba(98, 33, 142, 0.5);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+      /* line 252, server/public/src/sass/log.scss */
+      #chat_log #chat_log_list #cll-glue-toggle i {
+        color: #FFEB3B;
+        opacity: 0.7;
+        transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+        /* line 256, server/public/src/sass/log.scss */
+        #chat_log #chat_log_list #cll-glue-toggle i:hover, #chat_log #chat_log_list #cll-glue-toggle i:active {
+          color: #FDD835;
+          opacity: 1; }
+  /* line 264, server/public/src/sass/log.scss */
+  #chat_log.unglued #cll-glue-toggle {
+    display: block !important; }
+  /* line 269, server/public/src/sass/log.scss */
+  #chat_log.glued #cll-glue-toggle {
+    opacity: 0;
+    pointer-events: none; }
+
+/* line 275, server/public/src/sass/log.scss */
+#chat_log_list::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  background-color: transparent; }
+
+/* line 280, server/public/src/sass/log.scss */
+#chat_log_list::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent; }
+
+/* line 285, server/public/src/sass/log.scss */
+#chat_log_list::-webkit-scrollbar-thumb {
+  background-color: #545454;
+  border: 2px solid #383838; }
+
+/* line 291, server/public/src/sass/log.scss */
+/* body #room_info {
+  bottom: 180px;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); } */
+
+/* line 297, server/public/src/sass/log.scss */
+/* body.log-maximized #room_info {
+  bottom: 180px; } */
+
+/* line 302, server/public/src/sass/log.scss */
+/* body.log-minimized #room_info {
+  bottom: 50px; } */
+
+/* line 310, server/public/src/sass/log.scss */
+#chat_bar #chat_send div {
+  margin-top: 7px;
+  margin-left: 3px; }
+
+/* line 3, server/public/src/sass/top-bar.scss */
+body.top-bar-hidden #top_bar {
+  display: none !important; }
+
+/* line 8, server/public/src/sass/top-bar.scss */
+body.top-bar-visible #top_bar {
+  display: block !important; }
+
+/* line 11, server/public/src/sass/top-bar.scss */
+body.top-bar-visible #content {
+  background-position: 0px 100px, center; }
+
+/* line 16, server/public/src/sass/top-bar.scss */
+body .top-bar-wrapper {
+  width: 100%;
+  height: 50px; }
+  /* line 23, server/public/src/sass/top-bar.scss */
+  body .top-bar-wrapper .top-bar-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%; }
+    /* line 28, server/public/src/sass/top-bar.scss */
+    body .top-bar-wrapper .top-bar-inner .top-bar-item {
+      flex-grow: 1;
+      height: 100%; }
+      /* line 32, server/public/src/sass/top-bar.scss */
+      body .top-bar-wrapper .top-bar-inner .top-bar-item.top-bar-left.top-bar-room-info {
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        /* line 42, server/public/src/sass/top-bar.scss */
+        body .top-bar-wrapper .top-bar-inner .top-bar-item.top-bar-left.top-bar-room-info .room-name-wrapper {
+          width: 100%;
+          display: flex; }
+          /* line 45, server/public/src/sass/top-bar.scss */
+          body .top-bar-wrapper .top-bar-inner .top-bar-item.top-bar-left.top-bar-room-info .room-name-wrapper .room-icon {
+            display: flex;
+            margin-left: 8px;
+            margin-right: 8px; }
+            /* line 49, server/public/src/sass/top-bar.scss */
+            body .top-bar-wrapper .top-bar-inner .top-bar-item.top-bar-left.top-bar-room-info .room-name-wrapper .room-icon i {
+              font-size: 22px; }
+          /* line 54, server/public/src/sass/top-bar.scss */
+          body .top-bar-wrapper .top-bar-inner .top-bar-item.top-bar-left.top-bar-room-info .room-name-wrapper .room-name {
+            font-weight: bold;
+            font-family: 'Ubuntu Mono', monospace;
+            display: flex;
+            font-size: 14px;
+            line-height: 25px;
+            text-transform: capitalize; }
+
+/* line 103, server/public/src/sass/top-bar.scss */
+body #top_bar {
+  position: relative;
+  background-color: #FFF;
+  color: #FAFAFA;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px;
+  z-index: 50; }
+  /* line 112, server/public/src/sass/top-bar.scss */
+  body #top_bar .top-bar-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%; }
+    /* line 117, server/public/src/sass/top-bar.scss */
+    body #top_bar .top-bar-inner .top-bar-item {
+      flex-grow: 1;
+      height: 100%; }
+      /* line 121, server/public/src/sass/top-bar.scss */
+      body #top_bar .top-bar-inner .top-bar-item.top-bar-left img {
+        margin-top: 9px;
+        margin-left: 9px;
+        height: 32px;
+        width: 32px; }
+
+/* line 131, server/public/src/sass/top-bar.scss */
+body #sub_top_bar {
+  border-bottom: solid 1px #3e155a;
+  background-color: #FFF;
+  color: #8e44ad;
+  z-index: 40; }
+  /* line 136, server/public/src/sass/top-bar.scss */
+  body #sub_top_bar .top-bar-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%; }
+    /* line 141, server/public/src/sass/top-bar.scss */
+    body #sub_top_bar .top-bar-inner .top-bar-item {
+      flex-grow: 1;
+      height: 100%; }
+      /* line 152, server/public/src/sass/top-bar.scss */
+      body #sub_top_bar .top-bar-inner .top-bar-item.top-bar-right {
+        position: relative;
+        text-align: right; }
+        /* line 155, server/public/src/sass/top-bar.scss */
+        body #sub_top_bar .top-bar-inner .top-bar-item.top-bar-right .side-bar-toggle-wrapper {
+          position: absolute;
+          display: table;
+          top: 0px;
+          right: 10px;
+          margin: 10px 0px 10px auto;
+          height: 30px;
+          width: 30px;
+          border-radius: 3px; }
+          /* line 164, server/public/src/sass/top-bar.scss */
+          body #sub_top_bar .top-bar-inner .top-bar-item.top-bar-right .side-bar-toggle-wrapper:hover {
+            background-color: #612e76; }
+          /* line 167, server/public/src/sass/top-bar.scss */
+          body #sub_top_bar .top-bar-inner .top-bar-item.top-bar-right .side-bar-toggle-wrapper:active {
+            background-color: #612e76;
+            box-shadow: 0px 0px 5px #d2afe0; }
+          /* line 171, server/public/src/sass/top-bar.scss */
+          body #sub_top_bar .top-bar-inner .top-bar-item.top-bar-right .side-bar-toggle-wrapper .side-bar-toggle {
+            height: 100%;
+            width: 100%;
+            font-size: 20px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle; }
+
+/* Sidebar */
+/* line 3, server/public/src/sass/side-bar.scss */
+body #side_bar {
+  position: fixed;
+  top: 50px;
+  right: -305px;
+  width: 300px;
+  height: calc(100% - 50px);
+  height: calc(100vh - 50px);
+  z-index: 45; }
+  /* line 13, server/public/src/sass/side-bar.scss */
+  body #side_bar .side-bar-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #6d33a0; }
+    /* line 19, server/public/src/sass/side-bar.scss */
+    body #side_bar .side-bar-inner .side-bar-top {
+      height: 49px;
+      width: 100%;
+      background-color: #FFF;
+      border-left: solid 1px rgba(255, 255, 255, 0.1);
+      border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+      z-index: 300;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px;
+      color: #8e44ad; }
+      /* line 28, server/public/src/sass/side-bar.scss */
+      body #side_bar .side-bar-inner .side-bar-top .side-bar-top-inner {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        -webkit-box-align: stretch;
+        align-items: stretch; }
+        /* line 34, server/public/src/sass/side-bar.scss */
+        body #side_bar .side-bar-inner .side-bar-top .side-bar-top-inner .side-bar-top-toggle-wrapper {
+          position: absolute;
+          display: table;
+          top: 0px;
+          left: 10px;
+          margin: 10px auto 10px 0px;
+          height: 30px;
+          width: 30px;
+          border-radius: 3px; }
+          /* line 43, server/public/src/sass/side-bar.scss */
+          body #side_bar .side-bar-inner .side-bar-top .side-bar-top-inner .side-bar-top-toggle-wrapper:hover {
+            background-color: #612e76; }
+          /* line 46, server/public/src/sass/side-bar.scss */
+          body #side_bar .side-bar-inner .side-bar-top .side-bar-top-inner .side-bar-top-toggle-wrapper:active {
+            background-color: #612e76;
+            box-shadow: 0px 0px 5px #d2afe0; }
+          /* line 50, server/public/src/sass/side-bar.scss */
+          body #side_bar .side-bar-inner .side-bar-top .side-bar-top-inner .side-bar-top-toggle-wrapper .side-bar-toggle {
+            height: 100%;
+            width: 100%;
+            font-size: 20px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle; }
+        /* line 59, server/public/src/sass/side-bar.scss */
+        body #side_bar .side-bar-inner .side-bar-top .side-bar-top-inner .side-bar-title {
+          width: 100%;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -ms-flex-item-align: center;
+          align-self: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          /* line 70, server/public/src/sass/side-bar.scss */
+          body #side_bar .side-bar-inner .side-bar-top .side-bar-top-inner .side-bar-title h3 {
+            cursor: default;
+            width: 100%; }
+    /* line 77, server/public/src/sass/side-bar.scss */
+    body #side_bar .side-bar-inner .side-bar-content {
+      flex: 1;
+      z-index: 299; }
+      /* line 81, server/public/src/sass/side-bar.scss */
+      body #side_bar .side-bar-inner .side-bar-content .room-directory-list ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0; }
+        /* line 85, server/public/src/sass/side-bar.scss */
+        body #side_bar .side-bar-inner .side-bar-content .room-directory-list ul li {
+          width: 100%; }
+          /* line 87, server/public/src/sass/side-bar.scss */
+          body #side_bar .side-bar-inner .side-bar-content .room-directory-list ul li .rdl-inner {
+            display: flex;
+            width: 100%;
+            background-color: #FAFAFA;
+            height: 50px;
+            color: #212121;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-item-align: center;
+            align-self: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: start; }
+            /* line 101, server/public/src/sass/side-bar.scss */
+            body #side_bar .side-bar-inner .side-bar-content .room-directory-list ul li .rdl-inner .icon {
+              transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+              background-color: rgba(255, 255, 255, 0.3);
+              text-transform: capitalize;
+              height: 35px;
+              width: 35px;
+              font-size: 1.4rem;
+              font-weight: 600;
+              padding: 0;
+              margin: 0;
+              margin-left: 8px;
+              border-right: solid 1px #E0E0E0;
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center; }
+            /* line 125, server/public/src/sass/side-bar.scss */
+            body #side_bar .side-bar-inner .side-bar-content .room-directory-list ul li .rdl-inner .name {
+              font-size: 12px;
+              padding-left: 5px;
+              text-transform: capitalize; }
+            /* line 130, server/public/src/sass/side-bar.scss */
+            body #side_bar .side-bar-inner .side-bar-content .room-directory-list ul li .rdl-inner .actions {
+              margin: 0;
+              margin-right: 8px;
+              margin-left: auto;
+              display: -webkit-inline-box;
+              display: -ms-inline-flexbox;
+              display: inline-flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center; }
+              /* line 131, server/public/src/sass/side-bar.scss */
+              body #side_bar .side-bar-inner .side-bar-content .room-directory-list ul li .rdl-inner .actions .info {
+                margin-right: 12px;
+                padding-right: 5px;
+                border-right: solid 1px #E0E0E0; }
+      /* line 154, server/public/src/sass/side-bar.scss */
+      body #side_bar .side-bar-inner .side-bar-content .room-edit-room-form {
+        margin: 5px 10px; }
+        /* line 160, server/public/src/sass/side-bar.scss */
+        body #side_bar .side-bar-inner .side-bar-content .room-edit-room-form form ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          width: 100%; }
+          /* line 165, server/public/src/sass/side-bar.scss */
+          body #side_bar .side-bar-inner .side-bar-content .room-edit-room-form form ul li {
+            color: #FAFAFA;
+            width: 100%; }
+            /* line 169, server/public/src/sass/side-bar.scss */
+            body #side_bar .side-bar-inner .side-bar-content .room-edit-room-form form ul li .erf-group label {
+              font-size: 14px;
+              display: inline-block;
+              margin-bottom: 5px; }
+            /* line 174, server/public/src/sass/side-bar.scss */
+            body #side_bar .side-bar-inner .side-bar-content .room-edit-room-form form ul li .erf-group input {
+              display: block;
+              box-sizing: border-box;
+              width: 100%;
+              height: 20px;
+              font-size: 18px;
+              line-height: 1.5;
+              border: 1px solid #e2e5ec;
+              border-radius: 2px;
+              margin-bottom: 10px; }
+            /* line 185, server/public/src/sass/side-bar.scss */
+            body #side_bar .side-bar-inner .side-bar-content .room-edit-room-form form ul li .erf-group textarea {
+              display: block;
+              box-sizing: border-box;
+              width: 100%;
+              font-size: 18px;
+              line-height: 1.5;
+              border-radius: 2px;
+              margin-bottom: 10px; }
+    /* line 201, server/public/src/sass/side-bar.scss */
+    body #side_bar .side-bar-inner .side-bar-bottom {
+      width: 100%;
+      height: 50px;
+      background-color: #FFF;
+      z-index: 1000; }
+      /* line 206, server/public/src/sass/side-bar.scss */
+      body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner {
+        height: 100%;
+        width: 100%; }
+        /* line 209, server/public/src/sass/side-bar.scss */
+        body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner .create-room-button {
+          height: 100%;
+          width: 100%; }
+          /* line 212, server/public/src/sass/side-bar.scss */
+          body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner .create-room-button button {
+            width: 100%;
+            height: 100%;
+            background-color: #27ae60;
+            border: 0;
+            color: #FAFAFA;
+            transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+            /* line 219, server/public/src/sass/side-bar.scss */
+            body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner .create-room-button button:hover, body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner .create-room-button button:active {
+              background-color: #2ecc71; }
+        /* line 224, server/public/src/sass/side-bar.scss */
+        body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          height: 100%; }
+          /* line 229, server/public/src/sass/side-bar.scss */
+          body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap {
+            flex-grow: 1;
+            height: 100%; }
+            /* line 232, server/public/src/sass/side-bar.scss */
+            body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button {
+              height: 100%;
+              width: 100%;
+              border: 0;
+              color: #FAFAFA;
+              background-color: #2980b9;
+              transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+              /* line 239, server/public/src/sass/side-bar.scss */
+              body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button:hover, body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button:active {
+                background-color: #3498db;
+                color: #FFF; }
+              /* line 243, server/public/src/sass/side-bar.scss */
+              body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button.save {
+                background-color: #27ae60; }
+                /* line 245, server/public/src/sass/side-bar.scss */
+                body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button.save:hover, body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button.save:active {
+                  background-color: #2ecc71; }
+              /* line 249, server/public/src/sass/side-bar.scss */
+              body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button.reset {
+                background-color: #c0392b; }
+                /* line 251, server/public/src/sass/side-bar.scss */
+                body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button.reset:hover, body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button.reset:active {
+                  background-color: #e74c3c; }
+              /* line 255, server/public/src/sass/side-bar.scss */
+              body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button.cancel {
+                background-color: #d35400; }
+                /* line 257, server/public/src/sass/side-bar.scss */
+                body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button.cancel:hover, body #side_bar .side-bar-inner .side-bar-bottom .side-bar-bottom-inner.split-buttons .btn-wrap button.cancel:active {
+                  background-color: #e67e22; }
+
+/* line 269, server/public/src/sass/side-bar.scss */
+body.side-bar-collapsed #app_wrapper {
+  width: 100%;
+  width: 100vw; }
+
+/* line 273, server/public/src/sass/side-bar.scss */
+body.side-bar-collapsed #side_bar {
+  right: -305px; }
+
+/* line 278, server/public/src/sass/side-bar.scss */
+body.side-bar-visible #app_wrapper {
+  width: calc(100% - 300px);
+  width: calc(100vw - 300px); }
+  /* line 281, server/public/src/sass/side-bar.scss */
+  body.side-bar-visible #app_wrapper .side-bar-toggle-wrapper {
+    display: none !important; }
+
+/* line 285, server/public/src/sass/side-bar.scss */
+body.side-bar-visible #side_bar {
+  right: 0px; }
+
+/* Application */
+/* line 15, server/public/src/sass/app/app.scss */
+.blur-overlay {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(142, 68, 173, 0.4);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  backdrop-filter: blur(2px); }
+
+/* line 1, server/public/src/sass/app/emojis.scss */
+span.emoji {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: baseline;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 1em;
+  height: 1em;
+  background-size: 1em;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  background-position: 50%, 50%;
+  background-size: contain; }
+
+/* line 18, server/public/src/sass/app/emojis.scss */
+span.emoji-sizer {
+  line-height: 0.81em;
+  font-size: 1em;
+  margin: -2px 0; }
+
+/* line 24, server/public/src/sass/app/emojis.scss */
+span.emoji-outer {
+  display: -moz-inline-box;
+  display: inline-block;
+  *display: inline;
+  height: 1em;
+  width: 1em; }
+
+/* line 32, server/public/src/sass/app/emojis.scss */
+span.emoji-inner {
+  display: -moz-inline-box;
+  display: inline-block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 100%;
+  vertical-align: baseline;
+  *vertical-align: auto;
+  *zoom: 1; }
+
+/* line 43, server/public/src/sass/app/emojis.scss */
+img.emoji {
+  width: 1em;
+  height: 1em; }
+
+/* Modal Base */
+/* line 2, server/public/src/sass/app/modals/_modal-base.scss */
+.bzw-modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh; }
+  /* line 6, server/public/src/sass/app/modals/_modal-base.scss */
+  .bzw-modal .modal-inner {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-width: 512px;
+    max-height: 100%;
+    background-color: #FFF;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    border-radius: 4px; }
+    /* line 18, server/public/src/sass/app/modals/_modal-base.scss */
+    .bzw-modal .modal-inner .form-panel {
+      padding: 15px; }
+      /* line 20, server/public/src/sass/app/modals/_modal-base.scss */
+      .bzw-modal .modal-inner .form-panel .form-header {
+        text-align: center; }
+      /* line 23, server/public/src/sass/app/modals/_modal-base.scss */
+      .bzw-modal .modal-inner .form-panel .form-content {
+        padding: 20px 60px; }
+        /* line 25, server/public/src/sass/app/modals/_modal-base.scss */
+        .bzw-modal .modal-inner .form-panel .form-content .form-group {
+          width: 100%;
+          margin-bottom: 20px;
+          position: relative; }
+          /* line 30, server/public/src/sass/app/modals/_modal-base.scss */
+          .bzw-modal .modal-inner .form-panel .form-content .form-group.one-button button {
+            background: #4285F4;
+            width: 100%;
+            border: 0;
+            border-radius: 4px;
+            padding: 12px 20px;
+            color: #FFFFFF;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: 500;
+            line-height: inherit;
+            text-transform: uppercase;
+            cursor: pointer; }
+          /* line 45, server/public/src/sass/app/modals/_modal-base.scss */
+          .bzw-modal .modal-inner .form-panel .form-content .form-group.split-links {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap; }
+            /* line 49, server/public/src/sass/app/modals/_modal-base.scss */
+            .bzw-modal .modal-inner .form-panel .form-content .form-group.split-links .split-link-item {
+              flex-grow: 1;
+              text-align: center; }
+              /* line 52, server/public/src/sass/app/modals/_modal-base.scss */
+              .bzw-modal .modal-inner .form-panel .form-content .form-group.split-links .split-link-item:first-child {
+                text-align: left; }
+              /* line 55, server/public/src/sass/app/modals/_modal-base.scss */
+              .bzw-modal .modal-inner .form-panel .form-content .form-group.split-links .split-link-item:last-child {
+                text-align: right; }
+          /* line 60, server/public/src/sass/app/modals/_modal-base.scss */
+          .bzw-modal .modal-inner .form-panel .form-content .form-group input {
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 4px;
+            outline: none;
+            display: block;
+            background: rgba(0, 0, 0, 0.1);
+            border: 0;
+            padding: 12px 20px;
+            color: rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500; }
+  /* line 78, server/public/src/sass/app/modals/_modal-base.scss */
+  .bzw-modal .close-modal {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #757575; }
+    /* line 83, server/public/src/sass/app/modals/_modal-base.scss */
+    .bzw-modal .close-modal:hover, .bzw-modal .close-modal:active {
+      color: #212121; }
+
+/*  Login Modal */
+/* line 3, server/public/src/sass/app/modals/_discord-modal.scss */
+.bzw-modal.discord-modal .modal-inner {
+  background-color: transparent;
+  border-radius: 5px;
+  width: auto; }
+
+/* line 2, server/public/src/sass/app/_top-bar.scss */
+.top-bar-wrapper .top-bar-right {
+  position: relative;
+  color: #212121;
+  text-align: right;
+  display: flex;
+  -webkit-box-align: stretch;
+  align-items: stretch; }
+  /* line 9, server/public/src/sass/app/_top-bar.scss */
+  .top-bar-wrapper .top-bar-right .left-group {
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    /* line 12, server/public/src/sass/app/_top-bar.scss */
+    .top-bar-wrapper .top-bar-right .left-group .tbr-item {
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-left: auto; }
+      /* line 17, server/public/src/sass/app/_top-bar.scss */
+      .top-bar-wrapper .top-bar-right .left-group .tbr-item .tbr-i-inner {
+        margin: 0 20px; }
+  /* line 22, server/public/src/sass/app/_top-bar.scss */
+  .top-bar-wrapper .top-bar-right .top-bar-user {
+    height: 100%;
+    display: flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: auto; }
+    /* line 27, server/public/src/sass/app/_top-bar.scss */
+    .top-bar-wrapper .top-bar-right .top-bar-user .user-wrapper {
+      cursor: pointer;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: 10px;
+      padding: 4px;
+      border-radius: 4px;
+      color: #424242;
+      background-color: #D1C4E9;
+      transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); }
+      /* line 45, server/public/src/sass/app/_top-bar.scss */
+      .top-bar-wrapper .top-bar-right .top-bar-user .user-wrapper:hover, .top-bar-wrapper .top-bar-right .top-bar-user .user-wrapper:active {
+        color: #FAFAFA;
+        background-color: #6A1B9A; }
+        /* line 48, server/public/src/sass/app/_top-bar.scss */
+        .top-bar-wrapper .top-bar-right .top-bar-user .user-wrapper:hover .user-badge, .top-bar-wrapper .top-bar-right .top-bar-user .user-wrapper:active .user-badge {
+          background-color: rgba(147, 147, 147, 0.3); }
+      /* line 52, server/public/src/sass/app/_top-bar.scss */
+      .top-bar-wrapper .top-bar-right .top-bar-user .user-wrapper .user-name {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        text-transform: capitalize;
+        margin-right: 5px;
+        margin-left: 5px; }
+      /* line 60, server/public/src/sass/app/_top-bar.scss */
+      .top-bar-wrapper .top-bar-right .top-bar-user .user-wrapper .user-badge {
+        transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        background-color: rgba(255, 255, 255, 0.3);
+        text-transform: capitalize;
+        height: 35px;
+        width: 35px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+        border-radius: 2px;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+
+/* line 2, server/public/src/sass/app/_chat-input.scss */
+.completer-container {
+  transition: all, 544ms;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: normal;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 2.6px solid #8400c2;
+  border-bottom-color: #8400c2;
+  background-color: #e6e6e6; }
+  /* line 21, server/public/src/sass/app/_chat-input.scss */
+  .completer-container li {
+    transition: all, 574ms;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0;
+    padding: .5em .8em;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid #df99ff;
+    background-color: #ebebeb; }
+    /* line 34, server/public/src/sass/app/_chat-input.scss */
+    .completer-container li span.command {
+      font-weight: bold; }
+    /* line 37, server/public/src/sass/app/_chat-input.scss */
+    .completer-container li span.description {
+      font-style: italic; }
+    /* line 41, server/public/src/sass/app/_chat-input.scss */
+    .completer-container li.completer-selected, .completer-container li:hover, .completer-container li:active {
+      transition: all, 344ms;
+      margin-left: -1px;
+      border-left: 2.6px solid #9d00e6;
+      background-color: #dedede; }
+
+/* line 2, server/public/src/sass/app/_debug.scss */
+#debug-window {
+  display: block;
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  min-width: 300px;
+  max-width: 600px;
+  min-height: 300px;
+  background-color: rgba(49, 49, 49, 0.3);
+  color: #F2F2F2; }
+  /* line 13, server/public/src/sass/app/_debug.scss */
+  #debug-window #debug-animation-control {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(147, 147, 147, 0.5);
+    display: flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    /* line 22, server/public/src/sass/app/_debug.scss */
+    #debug-window #debug-animation-control > div {
+      display: flex;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      flex-grow: 1; }
+      /* line 27, server/public/src/sass/app/_debug.scss */
+      #debug-window #debug-animation-control > div.left a {
+        padding: 7px 10px; }
+        /* line 29, server/public/src/sass/app/_debug.scss */
+        #debug-window #debug-animation-control > div.left a.play {
+          color: #27ae60; }
+        /* line 32, server/public/src/sass/app/_debug.scss */
+        #debug-window #debug-animation-control > div.left a.pause {
+          color: #f1c40f; }
+      /* line 38, server/public/src/sass/app/_debug.scss */
+      #debug-window #debug-animation-control > div.center input {
+        padding: 5px 10px;
+        width: 40px; }
+
+/* line 38, server/public/src/sass/app/app.scss */
+.bonzi .bubble .close-bubble {
+  color: #424242;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-size: 12px;
+  top: 3px;
+  right: 5px;
+  opacity: 0.7; }
+  /* line 47, server/public/src/sass/app/app.scss */
+  .bonzi .bubble .close-bubble:hover, .bonzi .bubble .close-bubble:active {
+    color: #212121;
+    opacity: 1; }
+
+/* line 53, server/public/src/sass/app/app.scss */
+.bonzi .bubble:hover .close-bubble, .bonzi .bubble:active .close-bubble {
+  color: #212121;
+  opacity: 1; }
+
+/* line 61, server/public/src/sass/app/app.scss */
+.bonzi .bubble.video:hover .close-bubble, .bonzi .bubble.video:active .close-bubble, .bonzi .bubble.image:hover .close-bubble, .bonzi .bubble.image:active .close-bubble, .bonzi .bubble.media:hover .close-bubble, .bonzi .bubble.media:active .close-bubble {
+  color: #f39c12;
+  opacity: 0.7; }
+
+/* line 66, server/public/src/sass/app/app.scss */
+.bonzi .bubble.video .close-bubble, .bonzi .bubble.image .close-bubble, .bonzi .bubble.media .close-bubble {
+  font-size: 30px;
+  top: 12px;
+  right: 14px;
+  color: #bdc3c7;
+  opacity: 0.5; }
+  /* line 72, server/public/src/sass/app/app.scss */
+  .bonzi .bubble.video .close-bubble:hover, .bonzi .bubble.video .close-bubble:active, .bonzi .bubble.image .close-bubble:hover, .bonzi .bubble.image .close-bubble:active, .bonzi .bubble.media .close-bubble:hover, .bonzi .bubble.media .close-bubble:active {
+    color: #f1c40f;
+    opacity: 1; }
+
+/*!
+ * jQuery contextMenu - Plugin for simple contextMenu handling
+ *
+ * Version: v@VERSION
+ *
+ * Authors: Björn Brala (SWIS.nl), Rodney Rehm, Addy Osmani (patches for FF)
+ * Web: http://swisnl.github.io/jQuery-contextMenu/
+ *
+ * Copyright (c) 2011-@YEAR SWIS BV and contributors
+ *
+ * Licensed under
+ *   MIT License http://www.opensource.org/licenses/mit-license
+ *
+ * Date: @DATE
+ */
+/* line 23, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-icon.context-menu-hover:before {
+  color: #FFF; }
+
+/* line 26, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-icon.context-menu-disabled::before {
+  color: #8c8c8c; }
+
+/* line 30, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-icon.context-menu-icon--fa {
+  display: list-item; }
+  /* line 35, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+  .context-menu-icon.context-menu-icon--fa.context-menu-hover:before {
+    color: #FFF; }
+  /* line 38, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+  .context-menu-icon.context-menu-icon--fa.context-menu-disabled::before {
+    color: #8c8c8c; }
+
+/* line 42, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-icon.context-menu-icon--fa span {
+  font-family: sans-serif; }
+
+/* line 48, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-list {
+  background: #FFF;
+  border: 1px solid #aca899;
+  border-radius: 0;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-family: inherit;
+  font-size: 11px;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  max-width: none;
+  min-width: none;
+  padding: 2px;
+  position: absolute; }
+
+/* line 64, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-item {
+  background-color: #FFF;
+  color: #000;
+  padding: 5px 22px;
+  position: relative;
+  user-select: none; }
+
+/* line 72, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-separator {
+  border-bottom: 1px solid #aca899;
+  margin: 1px 2.5px;
+  padding: 0; }
+
+/* line 78, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-item > label > input,
+.context-menu-item > label > textarea {
+  user-select: text; }
+
+/* line 83, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-item.context-menu-hover {
+  background-color: #316ac5;
+  color: #FFF;
+  cursor: pointer; }
+
+/* line 89, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-item.context-menu-disabled {
+  background-color: #FFF;
+  color: #8c8c8c;
+  cursor: default; }
+
+/* line 95, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-input.context-menu-hover {
+  background-color: #EEE;
+  cursor: default; }
+
+/* line 100, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-submenu:after {
+  content: '';
+  border-style: solid;
+  border-width: .25em 0 .25em .25em;
+  border-color: transparent transparent transparent #000;
+  height: 0;
+  position: absolute;
+  right: .5em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  z-index: 1; }
+
+/**
+ * Inputs
+ */
+/* line 117, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-item.context-menu-input {
+  padding: .3em .6em; }
+
+/* vertically align inside labels */
+/* line 122, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-input > label > * {
+  vertical-align: top; }
+
+/* position checkboxes and radios as icons */
+/* line 127, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-input > label > input[type="checkbox"],
+.context-menu-input > label > input[type="radio"] {
+  margin-right: .4em;
+  position: relative;
+  top: .12em; }
+
+/* line 134, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-input > label {
+  margin: 0; }
+
+/* line 138, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-input > label,
+.context-menu-input > label > input[type="text"],
+.context-menu-input > label > textarea,
+.context-menu-input > label > select {
+  box-sizing: border-box;
+  display: block;
+  width: 100%; }
+
+/* line 147, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-input > label > textarea {
+  height: 7em; }
+
+/* line 151, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-item > .context-menu-list {
+  display: none;
+  /* re-positioned by js */
+  right: -.3em;
+  top: .3em; }
+
+/* line 158, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-item.context-menu-visible > .context-menu-list {
+  display: block; }
+
+/* line 162, server/public/src/sass/lib/jquery-contextmenu/jquery.contextMenu.scss */
+.context-menu-accesskey {
+  text-decoration: underline; }
+
+/*# sourceMappingURL=style.css.map */
+/*
+     FILE ARCHIVED ON 03:16:23 Dec 26, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:29:22 May 22, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 545.78
+  exclusion.robots: 0.102
+  exclusion.robots.policy: 0.093
+  cdx.remote: 0.072
+  esindex: 0.01
+  LoadShardBlock: 38.173 (3)
+  PetaboxLoader3.datanode: 52.276 (4)
+  CDXLines.iter: 18.067 (3)
+  load_resource: 86.082
+  PetaboxLoader3.resolve: 50.19
+*/

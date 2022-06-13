@@ -1,0 +1,70 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px; }
+
+body, body * {
+  font-family: "Tahoma", sans-serif; }
+
+input[type="text"] {
+  background-color: #fff;
+  border: 1px inset #AAA;
+  color: #000; }
+
+.xp_bubble, #content {
+  background: #ffffe1;
+  color: #000;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+  border: #000000 solid 1px; }
+
+@font-face {
+  font-family: 'Tahoma';
+  src: url("/font/Tahoma/Tahoma.eot#iefix") format("embedded-opentype"), url("/font/Tahoma/Tahoma.woff") format("woff"), url("/font/Tahoma/Tahoma.ttf") format("truetype"), url("/font/Tahoma/Tahoma.svg#Tahoma") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  overflow-y: auto; }
+
+body {
+  background-color: #6d33a0;
+  background-image:url("/img/desktop/redmoon.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+
+#content {
+  background-color: rgba(255, 255, 225, 0.8); }
+
+#bonziworld {
+  display: none; }
+
+#titlebar {
+  background-color: rgba(109, 51, 160, 0.85); }
+
+/*
+     FILE ARCHIVED ON 14:53:52 Mar 16, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 21:11:18 May 22, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 96.917
+  exclusion.robots: 0.158
+  exclusion.robots.policy: 0.147
+  cdx.remote: 0.086
+  esindex: 0.013
+  LoadShardBlock: 64.32 (3)
+  PetaboxLoader3.datanode: 95.335 (4)
+  CDXLines.iter: 20.584 (3)
+  load_resource: 112.878
+  PetaboxLoader3.resolve: 33.384
+*/

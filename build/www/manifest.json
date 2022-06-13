@@ -1,0 +1,24 @@
+{
+  "short_name": "BonziWORLD",
+  "name": "BonziWORLD Classic",
+  "icons": [
+    {
+      "src": "/favicons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/pwa_mode/",
+  "background_color": "#925DE8",
+  "display": "fullscreen",
+  "display_override": ["window-controls-overlay"],
+  "scope": "/",
+  "theme_color": "#925DE8",
+  "prefer_related_applications": "false",
+  "description": "The global leader in gorilla-based chat clients!"
+}
