@@ -130,15 +130,15 @@
                     <tr>
                         <td id="chat_send" class="no_selection">send</td>
                         <td id="chat_message_cont"><input id="chat_message" class="no_selection" type="text" placeholder="Enter a message or command...." /></td>
-                     <!-- <td id="chat_tray"><div class="tray_btn" id="btn_tile"></div></td> -->
+                     <td id="chat_tray"><div id="show_desktop"></div></td>
                     </tr>
                 </tbody>
             </table>
             <div class="page login" id="page_login">
                 <div class="app_showcase no_selection" id="login_apps">
                 </div>
-<div id="login_tabbed_readme" class="no_selection">
-<div class="pc-tab">
+<div id="login_tabbed_readme" class="no_selection">  
+<div class="pc-tab" id="window">
 <input checked="checked" id="tab1" type="radio" name="pct" />
 <input id="tab2" type="radio" name="pct" />
 <input id="tab3" type="radio" name="pct" />
@@ -157,9 +157,9 @@
   </nav>
   <section>
     <div class="tab1">
-    <p>Make sure to check out the&#32;<a id="readme" href="/readme/" target="_blank">README</a>&#32;and the&#32;<a id="readme" href="/rules/" target="_blank">RULES</a>&#32;before use.
+    <p>Make sure to check out the&#32;<a id="readme" href="/readme/" target="_blank" class="link_glow">README</a>&#32;and the&#32;<a id="readme" href="/rules/" target="_blank" class="link_glow">RULES</a>&#32;before use.
       <hr>
-     Click <a href="/pwa_mode/">HERE</a> to visit the PWA compatable version of this site.
+     Click <a href="/pwa_mode/" class="link_glow">HERE</a> to visit the PWA compatable version of this site.
                  <hr>
     </div>
     <div class="tab2">
@@ -190,12 +190,13 @@
 <button class="login_button no_selection">➔</button>
 <div id="login_error" class="no_selection" style="display: none;"></div>
                 </div>
-                <div id="login_load" class="no_selection">Loading...</div>
+                <div id="login_load" class="no_selection loading_cursor">Loading...<br><div role="progressbar" class="marquee"></div>
+</div>
                               <div id="login_social" class="no_selection">
-                    <a href="https://discord.gg/4f4GTWGQWq" target="_blank" style="margin-right: 10px;"><i class="fab fa-discord"></i></a>
-                    <a href="https://open.spotify.com/user/exogamer_1996?si=307fd3835e2f4c83" target="_blank" style="margin-right: 10px;"><i class="fab fa-spotify"></i></a>
-                    <a href="https://steamcommunity.com/profiles/76561199228365620" target="_blank" style="margin-right: 10px;"><i class="fab fa-steam"></i></a>
-                    <a href="https://www.youtube.com/channel/UCa7mVLNjbJSKqlPUSTZYKLQ" target="_blank" style="margin-right: 10px;"><i class="fab fa-youtube fa-1x" aria-hidden="true"></i></a>
+                    <a href="https://discord.gg/4f4GTWGQWq" target="_blank" class="icons" style="margin-right: 10px;"><i class="fab fa-discord"></i></a>
+                    <a href="https://open.spotify.com/user/exogamer_1996?si=307fd3835e2f4c83" target="_blank" class="icons" style="margin-right: 10px;"><i class="fab fa-spotify"></i></a>
+                    <a href="https://steamcommunity.com/profiles/76561199228365620" target="_blank" class="icons" style="margin-right: 10px;"><i class="fab fa-steam"></i></a>
+                    <a href="https://www.youtube.com/channel/UCa7mVLNjbJSKqlPUSTZYKLQ" target="_blank" class="icons" style="margin-right: 10px;"><i class="fab fa-youtube fa-1x" aria-hidden="true"></i></a>
                 </div>
                 <div id="login_version" class="no_selection">Version 3.4.61</div>
 
@@ -210,7 +211,7 @@
                     <br />
                     Try and reload the page. If that doesn't work and your internet is okay, then panic. We'll probably be back up Soon™ though.<br />
                     <br />
-                    <a href="#" onclick="window.location.reload();">Reload?</a><br />
+                    <button class="btn" onclick="window.location.reload();">Reload?</button><br />
                     <br />
                     Room ID -&#32;<span class="room_id">???</span><br />
                 </div>
@@ -247,7 +248,7 @@
                 </div>
             </div>
             <div class="page no_selection" id="page_skiddie" style="display: none;">
-                <div class="message_cont" id="kick_cont">
+                <div class="message_cont" id="skid_cont">
                     <img src="/img/error/logo2.png" /><br />
                     <br />
                     <h1>Script Kiddie Detected!!</h1>
@@ -303,10 +304,10 @@
             </div>
         </div>   
 <template id="b_alert" class="page no_selection"> 
-                <div class="message_cont"> 
+                <div class="message_cont no_selection"> 
                     <h1>text here afgjagoafgja</h1><br> 
                     <p>type text here for free</p><br> 
-                    <button>OK</button>
+                    <button class="btn">OK</button>
                 </div>
             </template>
         <div id="page_programs" class="page no_selection" style="display: none;">

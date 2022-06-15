@@ -1,12 +1,35 @@
+/* Component Needs */
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+#window {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.725);
+  border-radius: 3px;
+}
 #login_tabbed_readme {
+  font-family: Arial;
   position: absolute;
   padding: 4px 3px;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 2px 2px 2px #13316f;
-  outline: none;
-  background: #fff;
-  color: #000; 
+  border: 1px solid rgba(0, 0, 0, 0.725);
+  border-radius: 8px;
+  outline: 5;
+  
+  backdrop-filter: blur(7px) brightness(1.25);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5) inset, 0 0 10px rgba(0, 0, 0, 0.75);
+    background: linear-gradient(transparent 20%, hsla(0, 0%, 100%, 0.7) 40%, transparent 41%), linear-gradient(90deg, hsla(0, 0%, 100%, 0.4), rgba(0, 0, 0, 0.1), hsla(0, 0%, 100%, 0.2)),
+        linear-gradient(55deg, transparent, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.1) 50%, transparent 53%), #4580c4;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transform: translateZ(0x);
+  background-size: 100vw 100vh;
+  opacity: 85%;
+  transition: background-color 125ms ease-in-out;
+  will-change: backdrop-filter, background-color;
+  color: rgba(0, 0, 0, 1.5);
+}
+.profile_title {
+font: Segoe UI, sans-serif;
 }
   #login_tabbed_readme {
     bottom: 10%; 
@@ -25,7 +48,7 @@
   #login_tabbed_readme {
     display: none; } }
 #login_tabbed_readme {
-  color: #444;
+  color: rgba(0, 0, 0, 1.5);
   padding: 12px;
   bottom: 10%;
   width: auto;
@@ -38,9 +61,6 @@
 /* Credit: https://codepen.io/renatorib/pen/MWMoNQ */
 
 
-/* Component Needs */
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
 .pc-tab > input,
 .pc-tab section > div {
   display: none;
@@ -67,7 +87,6 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  background: #ecf0f1;
   transition: transform 500ms ease-in-out 25ms;
 
 }
@@ -87,23 +106,27 @@ body {
   margin: 0 10;
 }
 .pc-tab ul {
+  text-shadow: 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
   list-style: none;
   margin: 0;
   padding: 0;
+  opacity: 87%;
 }
 .pc-tab ul li label {
   border-radius: 3px;
-  font-family: "Raleway";
+  font-family: Raleway;
   float: left;
   padding: 8px 13px;
   border-bottom: 0;
   background: #e3e3e3;
+text-shadow: 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
   color: #444;
 }
 .pc-tab ul li label:hover {
   background: #dddddd;
 }
 .pc-tab ul li label:active {
+    text-shadow: 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
   background: #ebebeb;
   
 }
@@ -115,12 +138,26 @@ body {
   clear: both;
 }
 .pc-tab section div {
+  opacity: 100%
   transition: all 1s ease-in;
   padding: 15px;
   width: 100%;
-  background: #fff;
   line-height: 1.3em;
-  color: #444;
+  color: #ffffff;
+}
+.link_glow:hover {
+    backdrop-filter: blur(7px) brightness(1.25);
+    text-shadow: 0 0 4px #fff, 0 0 6px #fff, 0 0 10px #fff;
+}
+.link_glow {
+    color: #ffffff;
+    backdrop-filter: blur(7px) brightness(1.25);
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 5px #fff;
+}
+.icons {
+  border-radius: 3px;
+  filter: drop-shadow(0 0 0.75px rgba(0, 0, 0, 0.75)) drop-shadow(0 0 0.5px black);
+  backdrop-filter: blur(7px) brightness(1.25);
 }
 
 #tab1:checked ~ nav .tab1 label,
